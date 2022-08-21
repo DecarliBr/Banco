@@ -22,11 +22,11 @@ namespace Banco
             Henrique.numero = 70;
             Henrique.saldo = 2000;
 
-            //instanciando classe Cliente com o nome Diana
+            //instanciando classe Cliente com o nome Fulano
             ContaCorrente Fulano = new ContaCorrente();
             Cliente Fulano1 = new Cliente();
 
-            //Informações da conta Diana
+            //Informações da conta Fulano
             Fulano1.nome = "Fulano";
             Fulano.agencia = 375689369;
             Fulano.numero = 90;
@@ -38,7 +38,7 @@ namespace Banco
             Console.WriteLine("NUMERO: " + Henrique.numero);
             Console.WriteLine("SALDO: " + Henrique.saldo);
             Console.WriteLine();
-            //Printando informações na tela de Diana
+            //Printando informações na tela de Fulano
             Console.WriteLine("TITULAR: " + Fulano.titular);
             Console.WriteLine("AGENCIA: " + Fulano.agencia);
             Console.WriteLine("NUMERO: " + Fulano.numero);
@@ -82,13 +82,13 @@ namespace Banco
             //utilizando função criada para Transferir
 
             Console.WriteLine("saldo Henrique antes da transferencia R$ " + Henrique.saldo);
-            Console.WriteLine("saldo Diana antes do recebimento de transferencia R$ " + Fulano.saldo);
+            Console.WriteLine("saldo Fulano antes do recebimento de transferencia R$ " + Fulano.saldo);
             Console.WriteLine();
 
             // como função criada para Transferir utiliza dois parametros, tambem adicionamos os dois parametros na mesma ordem da função
             Henrique.Transferir(200, Fulano);
             Console.WriteLine("saldo Henrique apos transferencia R$ " + Henrique.saldo);
-            Console.WriteLine("saldo Diana apos recebimento de transferencia R$ " + Fulano.saldo);
+            Console.WriteLine("saldo Fulano apos recebimento de transferencia R$ " + Fulano.saldo);
             Console.WriteLine();
             Console.WriteLine("==============================================================================================");
 

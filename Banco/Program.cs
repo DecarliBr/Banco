@@ -27,7 +27,7 @@ namespace Banco
             Cliente Fulano1 = new Cliente();
 
             //Informações da conta Diana
-            Fulano1.nome = "Diana Nascimento dos Santos";
+            Fulano1.nome = "Fulano";
             Fulano.agencia = 375689369;
             Fulano.numero = 90;
             Fulano.saldo = 3000;
